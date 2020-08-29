@@ -38,6 +38,7 @@ task import: :environment do
   puts "building invoices.."
     invoices = File.join Rails.root, "data/invoices.csv"
   CSV.foreach(invoices, headers: true) do |row|
+    Invoice.create(row.to_h)
   end
 
   puts "building transactions.."
@@ -50,5 +51,9 @@ task import: :environment do
     invoice_items = File.join Rails.root, "data/invoice_items.csv"
   CSV.foreach(invoice_items, headers: true) do |row|
     InvoiceItem.create(row.to_h)
+  end
+
+  ActiveRecord::Base.connection.tables.each do |t|
+    ActiveRecord::Base.connection.reset_pk_sequence!(t)
   end
 end
