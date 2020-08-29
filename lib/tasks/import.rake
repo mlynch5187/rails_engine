@@ -29,13 +29,15 @@ task import: :environment do
   puts "building items.."
     items = File.join Rails.root, "data/items.csv"
   CSV.foreach(items, headers: true) do |row|
+    if row["unit_price"]
+      row["unit_price"] = (row["unit_price"].to_f / 100.0).round(2)
+    end
     Item.create(row.to_h)
   end
 
   puts "building invoices.."
     invoices = File.join Rails.root, "data/invoices.csv"
   CSV.foreach(invoices, headers: true) do |row|
-    Invoice.create(row.to_h)
   end
 
   puts "building transactions.."
