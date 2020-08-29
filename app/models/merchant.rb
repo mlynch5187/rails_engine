@@ -1,2 +1,2 @@
-class Merchants < ApplicationRecord  
+class Merchant < ApplicationRecord  
 end
