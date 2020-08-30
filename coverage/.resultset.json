@@ -236,7 +236,16 @@
         "lines": [
           1,
           1,
+          6,
+          6,
+          6,
+          6,
+          6,
+          1,
           null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -245,7 +254,9 @@
         "lines": [
           1,
           1,
-          null,
+          7,
+          7,
+          7,
           null,
           null
         ]
@@ -262,6 +273,57 @@
       "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/features/api/v1/merchant_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
           null,
           null
         ]
@@ -350,6 +412,7 @@
       "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/merchant.rb": {
         "lines": [
           1,
+          1,
           null
         ]
       },
@@ -370,6 +433,6 @@
         ]
       }
     },
-    "timestamp": 1598803958
+    "timestamp": 1598807474
   }
 }

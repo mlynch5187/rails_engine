@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Merchants' do
-  it 'can retrieve merchant info' do
+  xit 'can retrieve merchant info' do
     create_list(:merchant, 5)
 
     get '/api/v1/merchants'
@@ -19,17 +19,17 @@ describe 'Merchants' do
     end
   end
 
-  it 'can return merchant items' do
-    merchant = create(:merchant)
-    create_list(:item, 5, merchant: merchant)
+  xit 'can return merchant items' do
+    merchant1 = create(:merchant)
+    create_list(:item, 5, merchant_id: "#{merchant1.id}")
 
-    get "/api/v1/merchants/#{merchant.id}/items"
+    get "/api/v1/merchants/#{merchant1.id}/items"
 
     items = JSON.parse(response.body)
 
     expect(response).to be_successful
     expect(items['data'].count).to eq(5)
-    
+
     items['data'].each do |item|
       expect(item).to have_key('id')
       expect(item).to have_key('type')
