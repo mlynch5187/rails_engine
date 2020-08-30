@@ -24,16 +24,16 @@ describe 'Items' do
    merchant = create(:merchant)
    create(:item, merchant: merchant)
 
-   item_params = { "name" => "Test Item",
-                   "description" => "Test Des",
-                   "unit_price" => 2.1 }
+   params = { 'name' => 'Teddy Bear',
+                   'description' => 'Loveable',
+                   'unit_price' => 3.4 }
 
-   post "/api/v1/items", params: { item: item_params,
+   post '/api/v1/items', params: { item: params,
                                    merchant: merchant }
    expect(response).to be_successful
-   item = Item.last
-   expect(item.name).to eq("Test Item")
-   expect(item.description).to eq("Test Des")
-   expect(item.unit_price).to eq(2.1)
+   bear = Item.last
+   expect(bear.name).to eq('Teddy Bear')
+   expect(bear.description).to eq('Loveable')
+   expect(bear.unit_price).to eq(3.4)
   end
 end
