@@ -1,0 +1,375 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/environments/test.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/application_controller_renderer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/backtrace_silencers.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/cors.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/mime_types.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/initializers/wrap_parameters.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/customers.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/invoice_items.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/invoices.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/items.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/merchants.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/factories/transactions.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/config/routes.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/customer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/customer.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/invoice_item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/invoice_item.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/invoice_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/invoice.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/item_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/merchant_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/merchant.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/transaction_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/transaction.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1598803958
+  }
+}
