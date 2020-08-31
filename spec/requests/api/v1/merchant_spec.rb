@@ -45,8 +45,8 @@ describe 'Merchants API' do
       merchant = create(:merchant)
       item = create(:item, merchant: merchant)
       old_name = item.name
-      updated_params = { name: "New Name",
-                          description: "New Description",
+      updated_params = { name: "puppy paws",
+                          description: "paws for your pooch",
                           unit_price: 1.7 }
 
       put "/api/v1/items/#{item.id}", params: { item: updated_params }
@@ -54,13 +54,13 @@ describe 'Merchants API' do
 
       updated_item = Item.find(item.id)
 
-      expect(updated_item.name).to eq("New Name")
+      expect(updated_item.name).to eq("puppy paws")
       expect(updated_item.name).to_not eq("#{old_name}")
-      expect(updated_item.description).to eq("New Description")
-      expect(updated_item.unit_price).to eq(5.0)
+      expect(updated_item.description).to eq("paws for your pooch")
+      expect(updated_item.unit_price).to eq(1.7)
     end
 
-    xit 'item can be deleted' do
+    it 'item can be deleted' do
       merchant = create(:merchant)
       item_1 = create(:item, merchant: merchant)
       item_2 = create(:item, merchant: merchant)
