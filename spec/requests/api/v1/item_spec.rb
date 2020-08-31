@@ -36,23 +36,23 @@ describe 'Items API' do
     expect(item_response["data"]["attributes"]).to have_value(item.name)
   end
 
-  xit 'items can be created' do
+  it 'items can be created' do
     merchant = create(:merchant)
-    create(:item, merchant: merchant)
 
-    params = { 'name' => 'Teddy Bear',
-                   'description' => 'Loveable',
-                   'unit_price' => 3.4 }
+    params = { name: 'Teddy Bear',
+               description: 'Loveable',
+               unit_price: 2.1,
+               merchant_id: merchant.id }
 
-    post '/api/v1/items', params: { item: params,
-                                   merchant: merchant }
+    post '/api/v1/items', params: { item: params }
+
     expect(response).to be_successful
 
-    bear = Item.last
+    created_item = Item.last
 
-    expect(bear.name).to eq('Teddy Bear')
-    expect(bear.unit_price).to eq(3.4)
-    expect(bear.description).to eq('Loveable')
+    expect(created_item.name).to eq('Teddy Bear')
+    expect(created_item.unit_price).to eq(2.1)
+    expect(created_item.description).to eq('Loveable')
   end
 
   it 'items can be updated' do
@@ -63,7 +63,7 @@ describe 'Items API' do
                         "description": "New Description",
                         "unit_price": 2.5 }
 
-    put "/api/v1/items/#{item.id}", params: new_item_params
+    put "/api/v1/items/#{item.id}", params: { item: new_item_params }
 
     expect(response).to be_successful
 
