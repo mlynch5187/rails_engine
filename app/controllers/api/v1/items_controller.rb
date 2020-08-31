@@ -9,7 +9,6 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def create
-    require "pry"; binding.pry
       merchant = Merchant.find(params[:merchant_id])
       item = merchant.items.create(item_params)
       render json: ItemSerializer.new(item)
