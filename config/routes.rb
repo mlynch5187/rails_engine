@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :items, only: [:index]
+      resources :items, only: [:index, :update]
       resources :merchants, except: [:edit, :new]
       resources :merchants, except: [:edit, :new] do
         get '/items', to: 'merchant_items#index'

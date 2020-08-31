@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :item do
-    name { "MyString" }
-    description { "MyString" }
+    name { "kitten mittens" }
+    description { "slippers for your cat" }
     unit_price { 1.7 }
     updated_at { "MyString" }
     created_at { "MyString" }
