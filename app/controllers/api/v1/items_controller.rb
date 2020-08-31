@@ -1,7 +1,7 @@
 class Api::V1::ItemsController < ApplicationController
 
   def index
-    render json: ItemSerializer.new(Item.all)
+    json_response(serializer(Item.all))
   end
 
   def show
@@ -23,6 +23,10 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   private
+
+  def serializer(object)
+    ItemSerializer.new(object)
+  end
 
   def item_params
     params.require(:item).permit(:name, :description, :unit_price, :merchant_id)
