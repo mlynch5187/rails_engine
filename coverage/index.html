@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.2/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.2/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-30T11:29:35-06:00">2020-08-30T11:29:35-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-31T10:20:43-06:00">2020-08-31T10:20:43-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="yellow">
-  88.37%
+      <span class="red">
+  71.25%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.5
+         1.21
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>129</b> relevant lines,
+    <b>160</b> relevant lines,
     <span class="green"><b>114</b> lines covered</span> and
-    <span class="red"><b>15</b> lines missed. </span>
-    (<span class="yellow">
-  88.37%
+    <span class="red"><b>46</b> lines missed. </span>
+    (<span class="red">
+  71.25%
 </span>
 )
   </div>
@@ -347,12 +347,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b3ea8fc9273cad147eb15644c068405e219a6a21" class="src_link" title="spec/features/api/v1/merchant_spec.rb">spec/features/api/v1/merchant_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">37.50 %</td>
-            <td class="cell--number">39</td>
-            <td class="cell--number">24</td>
+            <td class="red strong cell--number t-file__coverage">16.36 %</td>
+            <td class="cell--number">86</td>
+            <td class="cell--number">55</td>
             <td class="cell--number">9</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">0.38</td>
+            <td class="cell--number">46</td>
+            <td class="cell--number">0.16</td>
             
           </tr>
         
@@ -3793,7 +3793,7 @@
     <h3>spec/features/api/v1/merchant_spec.rb</h3>
     <h4>
       <span class="red">
-  37.5%
+  16.36%
 </span>
 
       lines covered
@@ -3802,9 +3802,9 @@
     
 
     <div class="t-line-summary">
-      <b>24</b> relevant lines.
+      <b>55</b> relevant lines.
       <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>15</b> lines missed.</span>
+      <span class="red"><b>46</b> lines missed.</span>
     </div>
 
     
@@ -4228,12 +4228,529 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="39">
+            
+            
+
+            
+
+            <code class="ruby">    it &#39;item can be updated&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">      merchant = create(:merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">      item = create(:item, merchant: merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="42">
+            
+            
+
+            
+
+            <code class="ruby">      old_name = item.name</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">      updated_params = { name: &quot;New Name&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby">                          description: &quot;New Description&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">                          unit_price: 5.0 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">      put &quot;/api/v1/items/#{item.id}&quot;, params: { item: updated_params }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">      updated_item = Item.find(item.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">      expect(updated_item.name).to eq(&quot;New Name&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">      expect(updated_item.name).to_not eq(&quot;#{old_name}&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">      expect(updated_item.description).to eq(&quot;New Description&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">      expect(updated_item.unit_price).to eq(5.0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">    it &#39;item can be deleted&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby">      merchant = create(:merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">      item_1 = create(:item, merchant: merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">      item_2 = create(:item, merchant: merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">      expect(merchant.items.count).to eq(2)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">      delete &quot;/api/v1/items/#{item_1.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="66">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">      expect(merchant.items.count).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">    it &#39;a single item can be retrieved&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">      merchant = create(:merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">      item = create(:item, merchant: merchant)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="75">
+            
+            
+
+            
+
+            <code class="ruby">      get &quot;/api/v1/items/#{item.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">      item_response = JSON.parse(response.body)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">      expect(item_response.count).to eq(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">      expect(item_response[&#39;data&#39;][&#39;attributes&#39;]).to have_key(&#39;description&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">      expect(item_response[&#39;data&#39;][&#39;attributes&#39;]).to have_key(&#39;unit-price&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">      expect(item_response[&#39;data&#39;][&#39;attributes&#39;]).to have_key(&#39;name&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby">      expect(item_response[&#39;data&#39;][&#39;attributes&#39;]).to have_value(item.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="never" data-hits="" data-linenumber="86">
             
             
 
