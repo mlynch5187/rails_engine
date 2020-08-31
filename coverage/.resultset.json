@@ -236,11 +236,11 @@
         "lines": [
           1,
           1,
-          7,
-          7,
-          7,
-          7,
-          7,
+          11,
+          11,
+          11,
+          11,
+          11,
           1,
           null,
           null,
@@ -254,9 +254,9 @@
         "lines": [
           1,
           1,
-          7,
-          7,
-          7,
+          5,
+          5,
+          5,
           null,
           null
         ]
@@ -285,57 +285,15 @@
           null
         ]
       },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/customer.rb": {
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/merchant.rb": {
         "lines": [
+          1,
           1,
           null
         ]
       },
       "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/application_record.rb": {
         "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/invoice_item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/invoice_item.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/invoice_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/invoice.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/item_spec.rb": {
-        "lines": [
-          1,
-          null,
           1,
           1,
           null
@@ -348,153 +306,13 @@
           null
         ]
       },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/merchant_spec.rb": {
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/controllers/api/v1/items_controller.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/merchant.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/models/transaction_spec.rb": {
-        "lines": [
-          1,
           null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/models/transaction.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/requests/api/v1/item_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/spec/requests/api/v1/merchant_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
           null,
           1,
           1,
@@ -503,50 +321,22 @@
           1,
           0,
           0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/controllers/api/v1/merchants_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
           0,
           0,
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
           1,
-          0,
-          0,
           null,
           null,
           1,
           null,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -557,23 +347,6 @@
           null
         ]
       },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/serializers/merchant_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/controllers/api/v1/merchant_items_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/serializers/item_serializer.rb": {
         "lines": [
           1,
@@ -581,40 +354,8 @@
           1,
           null
         ]
-      },
-      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/controllers/api/v1/items_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1598892156
+    "timestamp": 1598903831
   }
 }

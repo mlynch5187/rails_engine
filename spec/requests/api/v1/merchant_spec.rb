@@ -73,7 +73,7 @@ describe 'Merchants API' do
       expect(merchant.items.count).to eq(1)
     end
 
-    xit 'a single item can be retrieved' do
+    it 'a single item can be retrieved' do
       merchant = create(:merchant)
       item = create(:item, merchant: merchant)
 
@@ -83,7 +83,7 @@ describe 'Merchants API' do
       expect(response).to be_successful
       expect(item_response.count).to eq(1)
       expect(item_response['data']['attributes']).to have_key('description')
-      expect(item_response['data']['attributes']).to have_key('unit-price')
+      expect(item_response['data']['attributes']).to have_key('unit_price')
       expect(item_response['data']['attributes']).to have_key('name')
       expect(item_response['data']['attributes']).to have_value(item.name)
   end
