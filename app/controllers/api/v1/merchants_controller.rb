@@ -1,26 +1,30 @@
 class Api::V1::MerchantsController < ApplicationController
 
   def index
-    render json: MerchantSerializer.new(Merchant.all)
+    json_response(serializer(Merchant.all))
   end
 
   def show
-    render json: MerchantSerializer.new(Merchant.find(params[:id]))
+    json_response(serializer(Item.find(params[:id])))
   end
 
   def create
-    render json: MerchantSerializer.new(Merchant.create(merchant_params))
+    json_response(serializer(merchant_params))
   end
 
   def update
-    render json: MerchantSerializer.new(Merchant.update(params[:id], merchant_params))
+    json_response(serializer(Item.update(params[:id], merchant_params)))
   end
 
   def destroy
-    render json: MerchantSerializer.new(Merchant.destroy(params[:id]))
+    json_response(serializer(Item.destroy(params[:id])))
   end
 
   private
+
+  def serializer(object)
+    MerchantSerializer.new(object)
+  end
 
   def merchant_params
     params.require(:merchant).permit(:name)
