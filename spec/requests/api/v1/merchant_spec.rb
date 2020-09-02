@@ -41,7 +41,7 @@ describe 'Merchants API' do
     end
   end
 
-    xit 'item can be updated' do
+    it 'item can be updated' do
       merchant = create(:merchant)
       item = create(:item, merchant: merchant)
       old_name = item.name
