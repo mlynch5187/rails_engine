@@ -60,7 +60,7 @@ describe 'Merchants API' do
       expect(updated_item.unit_price).to eq(1.7)
     end
 
-    it 'item can be deleted' do
+    it 'merchant item can be deleted' do
       merchant = create(:merchant)
       item_1 = create(:item, merchant: merchant)
       item_2 = create(:item, merchant: merchant)
@@ -73,7 +73,7 @@ describe 'Merchants API' do
       expect(merchant.items.count).to eq(1)
     end
 
-    it 'a single item can be retrieved' do
+    it 'a single merchant item can be retrieved' do
       merchant = create(:merchant)
       item = create(:item, merchant: merchant)
 
@@ -86,5 +86,19 @@ describe 'Merchants API' do
       expect(item_response['data']['attributes']).to have_key('unit_price')
       expect(item_response['data']['attributes']).to have_key('name')
       expect(item_response['data']['attributes']).to have_value(item.name)
+    end
+
+    it "can destroy a single merchant" do
+      merchant = create(:merchant)
+      item = create(:item, merchant: merchant)
+      create(:item, merchant: merchant)
+      create_list(:merchant, 2)
+
+      expect(Merchant.all.count).to eq(3)
+
+      delete "/api/v1/merchants/#{merchant.id}"
+
+      expect(response).to be_successful
+      expect(Merchant.all.count).to eq(2)
   end
 end

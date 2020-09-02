@@ -5,7 +5,7 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def show
-    json_response(serializer(Item.find(params[:id])))
+    json_response(serializer(Merchant.find(params[:id])))
   end
 
   def create
@@ -13,11 +13,11 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def update
-    json_response(serializer(Item.update(params[:id], merchant_params)))
+    json_response(serializer(Merchant.update(params[:id], merchant_params)))
   end
 
   def destroy
-    json_response(serializer(Item.destroy(params[:id])))
+    json_response(serializer(Merchant.destroy(params[:id])))
   end
 
   private
