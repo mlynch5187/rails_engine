@@ -650,7 +650,7 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
           null
         ]
@@ -861,8 +861,16 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
+          null
+        ]
+      },
+      "/Users/michaelalexlynch/turing/3.5module/projects/rails_engine/rails_engine/app/serializers/merchant_revenue_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null
         ]
       },
@@ -878,7 +886,6 @@
           null,
           null,
           1,
-          null,
           null,
           1,
           null,
@@ -924,6 +931,6 @@
         ]
       }
     },
-    "timestamp": 1599052938
+    "timestamp": 1599053357
   }
 }
