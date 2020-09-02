@@ -5,7 +5,6 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def show
-    require "pry"; binding.pry
     json_response(serializer(Merchant.find(params[:id])))
   end
 
