@@ -21,7 +21,7 @@ describe 'Items API' do
     end
   end
 
-  it "can send 1 item by id" do
+  it 'can send 1 item by id' do
     merchant = create(:merchant)
     item = create(:item, merchant: merchant)
 
@@ -30,10 +30,10 @@ describe 'Items API' do
 
     expect(response).to be_successful
     expect(item_response.count).to eq(1)
-    expect(item_response["data"]["attributes"]).to have_key("description")
-    expect(item_response["data"]["attributes"]).to have_key("unit_price")
-    expect(item_response["data"]["attributes"]).to have_key("name")
-    expect(item_response["data"]["attributes"]).to have_value(item.name)
+    expect(item_response['data']['attributes']).to have_key('description')
+    expect(item_response['data']['attributes']).to have_key('unit_price')
+    expect(item_response['data']['attributes']).to have_key('name')
+    expect(item_response['data']['attributes']).to have_value(item.name)
   end
 
   it 'items can be created' do
@@ -59,9 +59,9 @@ describe 'Items API' do
     merchant = create(:merchant)
     item = create(:item, merchant: merchant)
     old_name = item.name
-    new_item_params = { "name": "New Name",
-                        "description": "New Description",
-                        "unit_price": 2.5 }
+    new_item_params = { 'name': 'New Name',
+                        'description': 'New Description',
+                        'unit_price': 2.5 }
 
     put "/api/v1/items/#{item.id}", params: { item: new_item_params }
 
@@ -70,9 +70,9 @@ describe 'Items API' do
     updated_item = Item.find(item.id)
 
     expect(updated_item.name).to_not eq(old_name)
-    expect(updated_item.name).to eq("New Name")
+    expect(updated_item.name).to eq('New Name')
     expect(updated_item.unit_price).to eq(2.5)
-    expect(updated_item.description).to eq("New Description")
+    expect(updated_item.description).to eq('New Description')
   end
 
   it 'items can be deleted' do

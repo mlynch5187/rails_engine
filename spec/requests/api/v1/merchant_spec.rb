@@ -20,10 +20,10 @@ describe 'Merchants API' do
   end
 
   it 'can return merchant items' do
-    merchant1 = create(:merchant)
-    create_list(:item, 3, merchant_id: "#{merchant1.id}")
+    merchant = create(:merchant)
+    create_list(:item, 3, merchant_id: "#{merchant.id}")
 
-    get "/api/v1/merchants/#{merchant1.id}/items"
+    get "/api/v1/merchants/#{merchant.id}/items"
 
     items = JSON.parse(response.body)
 
