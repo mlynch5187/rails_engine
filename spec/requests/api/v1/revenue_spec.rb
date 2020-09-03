@@ -3,22 +3,22 @@ require 'rails_helper'
 describe "revenue filter" do
   before(:all) do
     #merchants
-    @merchant_1 = create(:merchant, name: "Bakery")
-    @merchant_2 = create(:merchant, name: "London Bakers")
-    @merchant_3 = create(:merchant, name: "Lousiville")
+    @merchant_1 = create(:merchant, name: "Tire Shop")
+    @merchant_2 = create(:merchant, name: "Bikes Galore")
+    @merchant_3 = create(:merchant, name: "Tire Heaven")
 
     #customers
-    @customer = Customer.create({ first_name: "Joey",
-                                  last_name: "Ondricka" })
+    @customer = Customer.create({ first_name: "Mike",
+                                  last_name: "Smith" })
 
     #items
-    @item_1_params = { name: "Candy",
-                      description: "Hot and spicy",
-                      unit_price: 10.0,
-                      created_at: "2020-01-13 14:53:59 UTC" }
-    @item_2_params = { name: "Can-o-Beans",
-                      description: "Comes in a jar",
-                      unit_price: 5.0 }
+    @item_1_params = { name: "Spoke",
+                      description: "Get Going",
+                      unit_price: 7.0,
+                      created_at: "2010-12-19 14:53:59 UTC" }
+    @item_2_params = { name: "Brakes",
+                      description: "When You Need To Stop",
+                      unit_price: 1.2 }
     @item_1 = @merchant_1.items.create(@item_1_params)
     @item_2 = @merchant_1.items.create(@item_2_params)
 
@@ -35,16 +35,16 @@ describe "revenue filter" do
     @invoice_items_1_params = { item_id: @item_1.id,
                                 invoice_id: @invoice_1.id,
                                 quantity: 5,
-                                unit_price: 10.0 }
+                                unit_price: 7.0 }
     @invoice_items_2_params = { item_id: @item_2.id,
                                 invoice_id: @invoice_2.id,
                                 quantity: 13,
-                                unit_price: 5.0 }
+                                unit_price: 1.2 }
     InvoiceItem.create(@invoice_items_1_params)
     InvoiceItem.create(@invoice_items_2_params)
 
   end
-  it "should get total revenue for a merchant" do
+  it "retrieves total revenue for a merchant" do
     get "/api/v1/merchants/#{@merchant_1.id}/revenue"
 
     expect(response).to be_successful
