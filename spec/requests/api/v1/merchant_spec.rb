@@ -60,6 +60,20 @@ describe 'Merchants API' do
       expect(updated_item.unit_price).to eq(1.7)
     end
 
+    it 'merchant can be updated' do
+      merchant = create(:merchant)
+      item = create(:item, merchant: merchant)
+      old_name = merchant.name
+      updated_params = { name: "Playdough Factory" }
+
+      put "/api/v1/merchants/#{merchant.id}", params: { merchant: updated_params }
+      expect(response).to be_successful
+
+      updated_merchant = Merchant.find(merchant.id)
+
+      expect(updated_merchant.name).to eq("Playdough Factory")
+    end
+
     it 'merchant item can be deleted' do
       merchant = create(:merchant)
       item_1 = create(:item, merchant: merchant)
