@@ -1,3 +1,7 @@
+# Dione's Comments:
+# There are a few tests in here that are testing item endpoints
+# Those tests should be moved to the item spec or be removed if they are duplicates
+
 require 'rails_helper'
 
 describe 'Merchants API' do

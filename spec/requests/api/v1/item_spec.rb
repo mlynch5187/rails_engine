@@ -12,6 +12,13 @@ describe 'Items API' do
     items = JSON.parse(response.body)
 
     expect(items['data'].count).to eq(5)
+# Dione's Comments:
+# This is a good test for checking for the attribute keys that an item should have, but to make this a little more robust the test could include:
+  # item = Item.first
+  # first_item = items[:data][0]
+  # expect(first_item[:name].to eq(item.name)
+  # continued for the other attributes
+# Writing our test this way keeps it dynamic and still allows for checking for values
 
     items['data'].each do |item|
       expect(item['attributes']).to have_key('name')
@@ -43,6 +50,16 @@ describe 'Items API' do
                description: 'Loveable',
                unit_price: 2.1,
                merchant_id: merchant.id }
+
+# For both the create and update tests it is important to make sure that these params are being sent as application/json
+# Currently these params are being sent as form data
+# In order to ensure it is being sent as application/json the test might follow a similiar structure to the below:
+   # merchant_params = { name: 'Best Merchant Name Ever' }
+   # post "/api/v1/merchant", headers: {"CONTENT_TYPE" => "application/json" }, params: JSON.generate({merchant: merchant_params})
+   #  merchant = Merchant.last
+   #
+   #  expect(response).to be_successful
+   #  expect(merchant.name).to eq(merchant_params[:name])
 
     post '/api/v1/items', params: { item: params }
 

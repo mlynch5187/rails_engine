@@ -1,3 +1,7 @@
+# Dione's comments:
+# Great job looking at each attribute
+# You also included a test that a user could seach by multiple attribtues like name & value, which wasn't part of the specificaitons, but good to see that you accounted for it
+
 require 'rails_helper'
 
 describe 'merchants search' do
@@ -42,7 +46,6 @@ describe 'items search' do
     get '/api/v1/items/find?description=presence'
     bell_descrip = JSON.parse(response.body)
     expect(response).to be_successful
-
     expect(bell_descrip.first).to have_value('Announce Your Presence')
   end
 
@@ -53,6 +56,7 @@ describe 'items search' do
   end
 
   it 'can find all items bys name and description' do
+
     get '/api/v1/items/find_all?name=bell&description=going'
     bell_going = JSON.parse(response.body)
     expect(bell_going.count).to eq(2)
