@@ -1,3 +1,6 @@
+# Dione's Comments
+# I would like to see this creation of the array pushed on down to the model
+# Maybe having a class method like `retrieve_items(attribute)` that you can pass the params on down to the model 
 class Api::V1::Items::SearchController < ApplicationController
   def index
     items = []

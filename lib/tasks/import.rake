@@ -1,3 +1,8 @@
+# Dione's Comments:
+# Good job completing the rake task to import the csv data
+# I like that you are converting the unit price before creating the resource
+# It is also good to see that you are resetting the primary keys for each table
+
 require 'csv'
 
 task import: :environment do
